@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dennis Ventrello — Portfolio Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=108">
+  <link rel="stylesheet" href="css/slides.css?v=108">
+</head>
+<body>
+
+<div id="viewport">
+  <div id="stage">
+
+    <header id="chrome-header">
+      <span class="wordmark">Dennis Ventrello</span>
+      <span class="context">Case Studies</span>
+    </header>
+
+    <!-- 01 · Title -->
+    <section class="slide slide--title">
+      <div class="marquee" aria-hidden="true">
+        <div class="m-col m-up">
+          <div class="m-card"><img src="assets/bg-title.jpg" alt=""><span class="m-label">Glacier bath</span></div>
+          <div class="m-card"><img src="assets/card-caldera.jpg" alt=""><span class="m-label">Santorini dining</span></div>
+          <div class="m-card"><img src="assets/card-alpine.jpg" alt=""><span class="m-label">Alpine lakes</span></div>
+          <div class="m-card"><img src="assets/card-coves.jpg" alt=""><span class="m-label">Hidden coves</span></div>
+          <div class="m-card"><img src="assets/bg-title.jpg" alt=""><span class="m-label">Glacier bath</span></div>
+          <div class="m-card"><img src="assets/card-caldera.jpg" alt=""><span class="m-label">Santorini dining</span></div>
+          <div class="m-card"><img src="assets/card-alpine.jpg" alt=""><span class="m-label">Alpine lakes</span></div>
+          <div class="m-card"><img src="assets/card-coves.jpg" alt=""><span class="m-label">Hidden coves</span></div>
+        </div>
+        <div class="m-col m-down">
+          <div class="m-card"><img src="assets/card-charter.jpg" alt=""><span class="m-label">Private charter</span></div>
+          <div class="m-card"><img src="assets/card-thailand.jpg" alt=""><span class="m-label">Thailand</span></div>
+          <div class="m-card"><img src="assets/card-aperitivo.jpg" alt=""><span class="m-label">Aperitivo hour</span></div>
+          <div class="m-card"><img src="assets/card-santorini.jpg" alt=""><span class="m-label">Santorini</span></div>
+          <div class="m-card"><img src="assets/card-charter.jpg" alt=""><span class="m-label">Private charter</span></div>
+          <div class="m-card"><img src="assets/card-thailand.jpg" alt=""><span class="m-label">Thailand</span></div>
+          <div class="m-card"><img src="assets/card-aperitivo.jpg" alt=""><span class="m-label">Aperitivo hour</span></div>
+          <div class="m-card"><img src="assets/card-santorini.jpg" alt=""><span class="m-label">Santorini</span></div>
+        </div>
+      </div>
+      <p class="eyebrow reveal">Product Design Director &middot; August 2026</p>
+      <h1 class="display-hero reveal">Experiences that make booking <span class="grad-text">extraordinary.</span></h1>
+      <p class="body-lg subline reveal">Two stories about AI, conversion, and craft from the booking funnel of Homes &amp; Villas by Marriott Bonvoy.</p>
+      <div class="credit-row reveal">
+        <span class="who">Dennis Ventrello</span>
+        <span class="for">Prepared for Velocity Black</span>
+      </div>
+    </section>
+
+    <!-- 02 · Intro -->
+    <section class="slide slide--bio">
+      <h2 class="display-lg reveal">I build AI enabled experiences that drive conversion, and teach others to do the same.</h2>
+      <p class="body-lg reveal">I'm a Product Design Director at Publicis Sapient, embedded with Homes &amp; Villas by Marriott Bonvoy since 2020. I direct design, product, engineering, and data teams through work that helped grow platform revenue 10x. Before that I designed for Amazon and Chewy, and spent six years turning a legacy racing parts manufacturer into a digital first brand.</p>
+      <div class="timeline reveal">
+        <div class="stop"><span class="yr">2012</span><span class="org">Amazon</span></div>
+        <div class="stop"><span class="yr">2014</span><span class="org">Chewy</span></div>
+        <div class="stop"><span class="yr">2014</span><span class="org">Jesel</span></div>
+        <div class="stop"><span class="yr">2020</span><span class="org">Homes &amp; Villas by Marriott Bonvoy</span></div>
+      </div>
+    </section>
+
+    <!-- 03 · Agenda -->
+    <section class="slide slide--agenda">
+      <div class="agenda-left">
+        <div class="agenda-row reveal">
+          <span class="num">Case Study 01</span>
+          <div class="what">
+            <span class="t">Blended AI Search</span>
+          </div>
+        </div>
+        <div class="agenda-row reveal">
+          <span class="num">Case Study 02</span>
+          <div class="what">
+            <span class="t">Booking Funnel Redesign</span>
+          </div>
+        </div>
+      </div>
+      <div class="side-bento">
+        <div class="cell cell--tall reveal"><img src="assets/card-coves.jpg" alt=""></div>
+        <div class="cell reveal" data-reveal="2"><img src="assets/card-alpine.jpg" alt=""></div>
+        <div class="cell reveal" data-reveal="3"><img src="assets/card-caldera.jpg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- 04 · Reveal -->
+    <section class="slide slide--tokens">
+      <div class="token-board">
+        <div class="head">
+          <h2 class="display-lg reveal">How this deck was built.</h2>
+          <p class="body-lg reveal">I used Claude Code to scrape Velocity.black for CSS values. Then I built a tokens.css file that acted as the source of truth and called the Unsplash API to directly inject luxury travel photography. It's hosted on GitHub and served by Vercel.</p>
+        </div>
+        <div class="token-group tg--span2 reveal" data-reveal="2">
+          <span class="g-label">Color</span>
+          <div class="swatch-row">
+            <div class="swatch"><div class="chip" style="background:var(--vb-black)"></div><span class="hx">0A0A0A</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-gray-950)"></div><span class="hx">121212</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-gray-700)"></div><span class="hx">4D4D4D</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-gray-500)"></div><span class="hx">808080</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-gray-300)"></div><span class="hx">BDBDBD</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-gray-100)"></div><span class="hx">EDEDED</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-text-primary)"></div><span class="hx">FFFFFF</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-violet)"></div><span class="hx">9747FF</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-ember)"></div><span class="hx">FB390C</span></div>
+            <div class="swatch"><div class="chip" style="background:var(--vb-blue)"></div><span class="hx">1E6DFA</span></div>
+          </div>
+          <div class="gradient-bar"></div>
+        </div>
+        <div class="token-group reveal" data-reveal="3">
+          <span class="g-label">Type</span>
+          <div class="type-specimens">
+            <span class="type-provenance"><s>Twenty Four Sans</s><span class="sep">&middot;</span><span class="now">Hanken Grotesk</span></span>
+            <span style="font: 300 44px/1.1 var(--vb-font-sans); letter-spacing: -0.02em;">Display Light 300</span>
+            <span style="font: 400 22px/1.4 var(--vb-font-sans); color: var(--vb-text-soft);">Body Regular 400</span>
+            <span class="eyebrow" style="font-size:16px;">Eyebrow mono, tracked</span>
+          </div>
+        </div>
+        <div class="token-group reveal" data-reveal="3">
+          <span class="g-label">Radius</span>
+          <div class="radius-rows">
+            <div class="radius-row">
+              <div class="swatch"><div class="rb" style="border-radius:var(--vb-radius-xs)"></div><span class="hx">4</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--vb-radius-sm)"></div><span class="hx">8</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--vb-radius-md)"></div><span class="hx">12</span></div>
+            </div>
+            <div class="radius-row">
+              <div class="swatch"><div class="rb" style="border-radius:var(--vb-radius-lg)"></div><span class="hx">24</span></div>
+              <div class="swatch"><div class="rb rb--pill"></div><span class="hx">9999</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="token-group reveal" data-reveal="4">
+          <span class="g-label">Effects</span>
+          <div class="fx-row">
+            <div class="swatch"><div class="fx fx--glow"></div><span class="hx">glow</span></div>
+            <div class="swatch"><div class="fx fx--fade"></div><span class="hx">fade-hard</span></div>
+          </div>
+        </div>
+        <div class="token-group tg--code reveal" data-reveal="4">
+          <span class="g-label">tokens.css</span>
+          <div class="code-card"><span class="k">--vb-black</span>: #0a0a0a;
+<span class="k">--vb-text-soft</span>: rgba(255, 255, 255, 0.75);
+<span class="k">--vb-border</span>: rgba(255, 255, 255, 0.1);
+<span class="k">--vb-violet</span>: #9747ff;
+<span class="k">--vb-ember</span>: #fb390c;
+<span class="k">--vb-blue</span>: #1e6dfa;
+<span class="k">--vb-grad-accent</span>: linear-gradient(90deg, var(--vb-violet) 0%, var(--vb-ember) 100%);
+<span class="k">--vb-fade-bottom</span>: linear-gradient(rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.1) 20%, rgb(10, 10, 10) 100%);
+<span class="k">--vb-vignette-inset</span>: rgb(10, 10, 10) 0px 0px 48px 48px inset;
+<span class="k">--vb-blur-glass</span>: 16px;
+<span class="k">--vb-blur-glow</span>: 96px;
+<span class="k">--vb-ease-site</span>: cubic-bezier(0.6, 0, 0.4, 1);
+<span class="k">--vb-dur-standard</span>: 400ms;
+<span class="k">--vb-radius-pill</span>: 9999px;
+<span class="k">--vb-grain-opacity</span>: 0.55;</div>
+        </div>
+        <div class="token-group tg--span2 reveal" data-reveal="5">
+          <span class="g-label">Unsplash API</span>
+          <div class="ph-thumbs">
+            <div class="cell"><img src="assets/card-santorini.jpg" alt=""></div>
+            <div class="cell"><img src="assets/card-thailand.jpg" alt=""></div>
+            <div class="cell"><img src="assets/card-alpine.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="token-group reveal" data-reveal="4">
+          <span class="g-label">Motion</span>
+          <div class="motion-lines">
+            <span>cubic-bezier(0.6, 0, 0.4, 1)</span>
+            <span>100 &middot; 300 &middot; 400 &middot; 600 &middot; 1000 ms</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · CS1 cover -->
+    <section class="slide slide--cover cover-glow">
+      <div class="copy">
+        <p class="eyebrow reveal">Homes &amp; Villas by Marriott Bonvoy</p>
+        <h2 class="display-xl reveal">Blended AI Search</h2>
+        <p class="body-lg reveal">A small team, a clear mandate, and beating Airbnb and VRBO to market while we were at it.</p>
+      </div>
+      <div class="media">
+        <img class="reveal" src="assets/blended-search-float-6.png" alt="AI search results on iPhone, suggested destinations and Top Pick">
+      </div>
+      <div class="role-strip reveal">
+        <span class="k">My role</span>
+        <span class="v">Led ideation and design on a cross functional team of product, design, and engineering leaders.</span>
+      </div>
+    </section>
+
+    <!-- 06 · CS1 Situation -->
+    <section class="slide slide--sidestack">
+      <div class="copy">
+        <h2 class="display-lg reveal">Guests don't dream in filters.</h2>
+        <p class="body-lg reveal">They dream in stories. Traditional travel search forces that into a destination field, and a date picker. So guests were dreaming off platform. They were on sites like Google and Pinterest where a competitor is always just one result away.</p>
+      </div>
+      <div class="side-stack">
+        <figure class="story-card reveal"><img src="assets/story-lodge.jpg" alt=""><figcaption class="quote">&ldquo;Somewhere cozy for a family reunion&rdquo;</figcaption></figure>
+        <figure class="story-card reveal" data-reveal="2"><img src="assets/story-venice.jpg" alt=""><figcaption class="quote">&ldquo;A place with character near great restaurants&rdquo;</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 07 · CS1 Task -->
+    <section class="slide slide--content">
+      <h2 class="display-lg reveal">Be first. Break nothing.</h2>
+      <p class="body-lg reveal">Our mandate was to be first to market without harming the core business. That meant every decision would be measured against conversion and revenue. We needed to protect the booking funnel at all costs, while also proving technical and financial feasibility, boosting brand visibility and hopefully gathering behavioral data along the way.</p>
+    </section>
+
+    <!-- 08 · CS1 Chat failed -->
+    <section class="slide slide--content">
+      <p class="eyebrow reveal">First attempt</p>
+      <h2 class="display-lg reveal">We immediately broke it.</h2>
+      <p class="body-lg reveal">We won the business, and sold the work on AI chat. Users hated it, and they told us every time we put it in front of them. &ldquo;It's not what I expected&rdquo; they'd tell us. Chat carried the stigma of canceling subscriptions and pleading for a human. It added steps between the homepage and results. It turned a simple task like adding destination, dates, and hitting search, into a conversation that nobody was asking for.</p>
+    </section>
+
+    <!-- 09 · CS1 800 pixels -->
+    <section class="slide slide--split media-duo">
+      <div class="copy">
+        <p class="eyebrow reveal">The turning point</p>
+        <h2 class="display-lg reveal">Changing mental models.</h2>
+        <p class="body-lg reveal">One day while I was iterating on designs, I happened to move the text field from the bottom of the page to the top. And that's when everything clicked. A text field at the bottom of the page reads as chat. The same field at the top reads as search. Move it 800 pixels and the mental model flips.</p>
+        </div>
+      <div class="media">
+        <img class="device reveal" data-reveal="2" src="assets/chat-mock.png" alt="AI chat prototype, text field at the bottom of the screen">
+        <img class="device reveal" data-reveal="3" src="assets/search-mock.png" alt="Blended AI search, the same field moved to the top">
+      </div>
+    </section>
+
+    <!-- 10 · CS1 Destinations -->
+    <section class="slide slide--split media-left">
+      <div class="copy">
+        <p class="eyebrow reveal">Discovery</p>
+        <h2 class="display-lg reveal">Unlocking the really fun stuff.</h2>
+        <p class="body-lg reveal">Once AI lived inside search instead of beside it or in front of it, everything guests were already familiar with got smarter. Generative content blended directly into our results pages. Predictive filtering turned described intent into the filters guests were most likely to be looking for. And AI location recommendations brought the whole research trip inside the funnel, instead of losing guests to Google searches.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" src="assets/ai-pair.png" alt="Map search with suggested filters, and generative destination content with accordion categories">
+      </div>
+    </section>
+
+    <!-- 11 · CS1 Tabs -->
+    <section class="slide slide--split media-plus">
+      <div class="copy">
+        <p class="eyebrow reveal">The design</p>
+        <h2 class="display-lg reveal">Two tabs, one solution.</h2>
+        <p class="body-lg reveal">We could've built a single input that handled both &ldquo;Paris&rdquo; and &ldquo;romantic getaway with Michelin star restaurants.&rdquo; But that's the auto manufacturer trap. So we made the experiences similar, but different. Destination Search stays fast and familiar. AI Search is exploratory and descriptive.</p>
+        <p class="body-lg reveal">And the tab boundary created natural drop off points that managed costly AI API calls, which made finance as happy as the guests.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" src="assets/tabbed-pair.png" alt="Destination Search and Search with AI tabs, side by side">
+      </div>
+    </section>
+
+    <!-- 12 · CS1 Adoption -->
+    <section class="slide slide--split">
+      <div class="copy">
+        <p class="eyebrow reveal">Adoption</p>
+        <h2 class="display-lg reveal" style="white-space: nowrap;">Nobody reads prompt tutorials.</h2>
+        <p class="body-lg reveal">Who wants to read instructions ahead of a search experience? Instead, we met guests where they already were. The search field rotated example prompts. We offered gentle guidance on adding locations, trip type, activities, and home features. Loading screens presented trending searches and search tips.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" src="assets/blended-search-float-3.png" alt="AI search guidance and suggested filters">
+      </div>
+    </section>
+
+    <!-- 13 · CS1 Result -->
+    <section class="slide slide--stat">
+      <p class="eyebrow reveal">Blended AI Search</p>
+      <div class="stat-figure accent reveal">1st</div>
+      <p class="display-md stat-caption reveal" style="color: var(--vb-text-soft);">To market with a blended AI search experience in travel.</p>
+      <div class="stat-footnotes reveal">
+        <div class="foot"><span class="n"><span data-count-to="54" data-suffix="M">0</span></span><span class="l">Media impressions</span></div>
+        <div class="foot"><span class="n"><span data-count-to="14" data-suffix="%">0%</span></span><span class="l">YoY site visits</span></div>
+        <div class="foot"><span class="n"><span data-count-to="10" data-suffix="%">0%</span></span><span class="l">Step conversion lift</span></div>
+        <div class="foot"><span class="n"><span data-count-to="6" data-suffix="%">0%</span></span><span class="l">Increase in saved homes</span></div>
+        <div class="foot"><span class="n"><span data-count-to="14">0</span></span><span class="l">Words in an average prompt</span></div>
+      </div>
+    </section>
+
+    <!-- 14 · Bridge -->
+    <section class="slide slide--statement">
+      <p class="eyebrow reveal">What happened next</p>
+      <h2 class="display-xl reveal">Discovery got better. Conversion didn't.</h2>
+      <p class="body-lg reveal">AI was bringing qualified guests into a booking flow built for a different era. So we rebuilt the funnel, end to end.</p>
+    </section>
+
+    <!-- 15 · CS2 cover -->
+    <section class="slide slide--cover cover-glow">
+      <div class="copy">
+        <p class="eyebrow reveal">Homes &amp; Villas by Marriott Bonvoy</p>
+        <h2 class="display-xl reveal">Booking Funnel Redesign</h2>
+        <p class="body-lg reveal">Every touchpoint from discovery through confirmation, rebuilt around how guests actually book.</p>
+      </div>
+      <div class="media">
+        <img class="reveal" src="assets/funnel-new.png" alt="Redesigned property page on iPhone, photography first with the drawer">
+      </div>
+      <div class="role-strip reveal">
+        <span class="k">My role</span>
+        <span class="v">Directed the design, product, engineering, and data teams, leading managers through the full initiative.</span>
+      </div>
+    </section>
+
+    <!-- 16 · CS2 Situation -->
+    <section class="slide slide--content">
+      <h2 class="display-lg reveal">The funnel carried years of neglect and quick fixes.</h2>
+      <p class="body-lg reveal">The issues were obvious to everyone. Booking had once spanned four separate pages. Pricing detail piled up early in the journey. Mobile got a desktop site squeezed onto a phone. We'd just never had the runway for a holistic pass, and incremental fixes kept losing to roadmap math.</p>
+      <p class="body-lg reveal">This time we committed to all of it.</p>
+    </section>
+
+    <!-- 17 · CS2 Task -->
+    <section class="slide slide--split media-duo">
+      <div class="copy">
+        <h2 class="display-md reveal">We rebuilt everything around two principles.</h2>
+        <p class="body-lg reveal">Mobile should feel native, and we should be deliberate about what to show and when.</p>
+      </div>
+      <div class="media">
+        <figure class="duo-fig reveal" data-reveal="2">
+          <img class="device" src="assets/funnel-old.png?v=2" alt="Legacy property page, serif titles and dense copy">
+          <figcaption>Before</figcaption>
+        </figure>
+        <figure class="duo-fig reveal" data-reveal="3">
+          <img class="device" src="assets/drawer-immersion.png" alt="Redesigned property page, gallery immersion with the drawer pulled down">
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 18 · CS2 Drawer -->
+    <section class="slide slide--split media-duo">
+      <div class="copy">
+        <p class="eyebrow reveal">Nearly native</p>
+        <h2 class="display-lg reveal">M-web that behaves like a native app.</h2>
+        <p class="body-lg reveal">The property page became two swipeable layers. Guests land on photography with key details in a drawer below. Swipe down to immerse in the gallery, swipe up for amenities and booking. No more endless scrolling, no more hunting for photos. Competing with Airbnb's mobile experience was the whole point.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" data-reveal="2" src="assets/Drawer-1.png" alt="Property page, drawer resting state">
+        <img class="device reveal" data-reveal="3" src="assets/Drawer-3.png" alt="Property page, details expanded">
+      </div>
+    </section>
+
+    <!-- 19 · CS2 Pricing -->
+    <section class="slide slide--compare title-below">
+      <div class="figures">
+        <figure class="reveal" data-reveal="1">
+          <img src="assets/Ratecard1.png" alt="Old ratecard with full pricing breakdown">
+          <figcaption>Before</figcaption>
+        </figure>
+        <figure class="reveal" data-reveal="2">
+          <img src="assets/Ratecard6.png" alt="New ratecard, total only">
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+      <h2 class="display-lg reveal" data-reveal="3">We made a big bet on progressive disclosure.</h2>
+    </section>
+
+    <!-- 20 · CS2 Behavior -->
+    <section class="slide slide--split media-plus copy-wider">
+      <div class="copy">
+        <p class="eyebrow reveal">Influencing behavior</p>
+        <h2 class="display-lg reveal">The right nudge, at the<br>right time.</h2>
+        <p class="body-lg reveal">Property pages earned labels like Top Pick and Going fast, tied to real booking velocity and availability. The calendar prompted at the exact moment guests were choosing dates. Gentle pressure, never manufactured scarcity.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" src="assets/nudges.png" alt="Top Pick and Going fast labels on property pages, and calendar prompts at date selection">
+      </div>
+    </section>
+
+    <!-- 21 · CS2 Booking page -->
+    <section class="slide slide--split media-plus copy-wider">
+      <div class="copy">
+        <p class="eyebrow reveal">The booking page</p>
+        <h2 class="display-lg reveal">Every slippery funnel needs<br>a sticky booking page.</h2>
+        <p class="body-lg reveal">We cut the language that didn't earn its place and moved multi factor authentication behind the Pay Now button, so there's no friction before commitment. Then we brought decisions onto the page. Dates, guest count, points, and offers are editable in place, and the gallery carries through for one last look.</p>
+        <p class="body-lg reveal">The only remaining action is to book.</p>
+      </div>
+      <div class="media">
+        <img class="device reveal" src="assets/booking-confirmation-r2.png" alt="Mobile booking page with editable details, and the booking confirmation screen">
+      </div>
+    </section>
+
+    <!-- 22 · CS2 Result -->
+    <section class="slide slide--stat">
+      <p class="eyebrow reveal">Booking Funnel</p>
+      <div class="stat-figure accent reveal"><span data-count-to="322" data-suffix="%">0%</span></div>
+      <p class="display-md stat-caption reveal" style="color: var(--vb-text-soft);">Mobile step conversion, property page to booking page. Desktop followed at 91%.</p>
+      <div class="stat-footnotes reveal">
+        <div class="foot"><span class="n"><span data-count-to="80" data-suffix="%">0%</span></span><span class="l">More daily mobile bookings</span></div>
+        <div class="foot"><span class="n"><span data-count-to="33" data-suffix="%">0%</span></span><span class="l">Overall mobile conversion</span></div>
+        <div class="foot"><span class="n"><span data-count-to="300" data-suffix="%">0%</span></span><span class="l">Saved homes, mobile</span></div>
+        <div class="foot"><span class="n"><span data-count-to="40" data-suffix="%">0%</span></span><span class="l">Faster page loads</span></div>
+      </div>
+    </section>
+
+    <!-- 23 · Close -->
+    <section class="slide slide--close">
+      <a class="reveal" href="https://www.dennisventrello.com">dennisventrello.com</a>
+      <a class="reveal" data-reveal="2" href="mailto:dennis.ventrello@gmail.com">dennis.ventrello@gmail.com</a>
+      <a class="reveal" data-reveal="3" href="https://linkedin.com/in/dennis-ventrello">in/dennis-ventrello</a>
+    </section>
+
+  </div>
+</div>
+
+<div id="progress"></div>
+<div id="slide-counter">01 / 27</div>
+
+<script src="js/deck.js?v=108"></script>
+
+<!-- Photography via Unsplash (unsplash.com/license):
+     bg-title.jpg (glacier bath) — Roan Lavery, unsplash.com/photos/BQLFUB4_EJw
+     card-charter.jpg — Mohamed Masaau, unsplash.com/photos/nfF5-G6cFwY
+     card-santorini.jpg — Alexandre Chambon, unsplash.com/photos/aapSemzfsOk
+     card-caldera.jpg — Philip Jahn, unsplash.com/photos/PYkpulrIMG0
+     card-aperitivo.jpg — Alev Takil, unsplash.com/photos/3syTDiVAc7w
+     card-alpine.jpg — Pietro De Grandi, unsplash.com/photos/T7K4aEPoGGk
+     card-thailand.jpg — Sasha Kaunas, unsplash.com/photos/xEaAoizNFV8
+     card-coves.jpg — Robin Noguier, unsplash.com/photos/sydwCr54rf0
+     story-lodge.jpg — Manuel Moreno, unsplash.com/photos/DGa0LQ0yDPc
+     story-venice.jpg — Rebe Adelaida, unsplash.com/photos/zunQwMy5B6M -->
+</body>
+</html>
