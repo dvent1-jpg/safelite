@@ -514,7 +514,6 @@ html, body {
 .slide--compare figure img {
   max-height: 560px;
   width: auto;
-  filter: drop-shadow(0 2px 4px rgba(55, 56, 57, 0.18)) drop-shadow(0 6px 16px rgba(55, 56, 57, 0.14));
 }
 .slide--compare figcaption {
   font-family: var(--dk-font-sans);
