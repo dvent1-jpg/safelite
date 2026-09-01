@@ -196,7 +196,7 @@ html, body {
   background: var(--sl-red);
   border-radius: 2px;
 }
-.slide--statement .red-rule { align-self: flex-start; }
+
 
 /* Hero stat */
 .slide--stat { align-items: flex-start; gap: var(--dk-space-3); }
@@ -515,7 +515,7 @@ html, body {
   max-height: 560px;
   width: auto;
   border-radius: var(--dk-radius-card);
-  border: 1px solid var(--dk-border);
+  box-shadow: var(--sl-shadow-soft);
 }
 .slide--compare figcaption {
   font-family: var(--dk-font-sans);
@@ -562,9 +562,9 @@ html, body {
   color: var(--dk-text-primary);
 }
 .swatch-row { display: flex; justify-content: space-between; }
-.swatch-row--brand { justify-content: flex-start; gap: 24px; margin-top: 6px; }
+.color-grid { display: grid; grid-template-columns: repeat(3, max-content); gap: 12px 40px; }
 .swatch { display: flex; flex-direction: column; gap: 8px; align-items: center; }
-.swatch .chip { width: 70px; height: 70px; border-radius: var(--dk-radius-sm); border: 1px solid var(--dk-border); }
+.swatch .chip { width: 56px; height: 56px; border-radius: var(--dk-radius-sm); border: 1px solid var(--dk-border); }
 .swatch .hx {
   font-family: var(--dk-font-mono);
   font-size: 11px;
