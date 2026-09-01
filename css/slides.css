@@ -173,12 +173,30 @@ html, body {
 }
 .slide--title .credit-row .who { font: 400 24px/1.4 var(--dk-font-sans); color: var(--dk-text-emphasis); }
 .slide--title .credit-row .for {
-  font-family: var(--dk-font-mono);
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--dk-text-muted);
+  font-family: var(--dk-font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--dk-text-secondary);
 }
+
+/* Title media: their storefront, rounded, flat */
+.title-media {
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.title-media img { width: 640px; border-radius: var(--dk-radius-card); display: block; }
+
+/* Red rule: the short underline bar beneath headings on safelite.com */
+.red-rule {
+  width: 200px;
+  height: 9px;
+  background: var(--sl-red);
+  border-radius: 2px;
+}
+.slide--statement .red-rule { align-self: flex-start; }
 
 /* Hero stat */
 .slide--stat { align-items: flex-start; gap: var(--dk-space-3); }
@@ -293,13 +311,6 @@ html, body {
   border-radius: var(--dk-radius-pill);
 }
 .stat-chip .n { font: 300 34px/1 var(--dk-font-sans); color: var(--dk-text-primary); }
-.stat-chip .l {
-  font-family: var(--dk-font-mono);
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--dk-text-muted);
-}
 
 /* --- Role strip (bottom of Task / cover slides) --- */
 /* Cover variant: straight phone, cropped at the role-strip hairline,
@@ -507,11 +518,11 @@ html, body {
   border: 1px solid var(--dk-border);
 }
 .slide--compare figcaption {
-  font-family: var(--dk-font-mono);
-  font-size: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--dk-text-muted);
+  font-family: var(--dk-font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--dk-text-secondary);
 }
 
 /* --- Token board (design-system breakdown) --- */
@@ -623,50 +634,6 @@ html, body {
 .btn-demo { font: 600 17px/1 var(--dk-font-sans); padding: 15px 34px; white-space: nowrap; }
 .btn-demo--solid { background: var(--sl-blue); color: #fff; border-radius: var(--sl-radius-cta); }
 .btn-demo--ghost { color: var(--sl-blue); border: 1px solid var(--sl-blue); border-radius: var(--sl-radius-lg); }
-/* --- Title marquee (velocity.black card-stream, verticalized) --- */
-.marquee {
-  position: absolute;
-  top: 0; bottom: 0; right: 60px;
-  width: 600px;
-  display: flex;
-  gap: 24px;
-  -webkit-mask-image: var(--dk-fade-mask-vertical);
-  mask-image: var(--dk-fade-mask-vertical);
-}
-/* height: max-content is load-bearing — as a stretched flex child the
-   column would be 1080px tall and translateY(-50%) would loop at -540px
-   instead of the duplicated set boundary, causing a visible snap. */
-.m-col { display: flex; flex-direction: column; height: max-content; }
-.m-col.m-up { animation: drift-up 58s linear infinite; }
-.m-col.m-down { animation: drift-down 66s linear infinite; }
-@keyframes drift-up { from { transform: translateY(0); } to { transform: translateY(-50%); } }
-@keyframes drift-down { from { transform: translateY(-50%); } to { transform: translateY(0); } }
-@media (prefers-reduced-motion: reduce) {
-  .m-col.m-up, .m-col.m-down { animation: none; }
-}
-.m-card {
-  position: relative;
-  width: 288px;
-  height: 396px;
-  flex: none;
-  border-radius: var(--dk-radius-card);
-  overflow: hidden;
-  margin-bottom: 24px;
-  box-shadow: var(--sl-shadow-soft);
-}
-.m-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.m-card .m-label {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 56px 20px 18px;
-  background: var(--dk-fade-caption);
-  font-family: var(--dk-font-mono);
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--dk-text-soft);
-}
-
 /* --- Side stack: text left, stacked imagery right --- */
 .slide--sidestack { flex-direction: row; align-items: center; gap: var(--dk-space-6); }
 .slide--sidestack .copy {
@@ -720,13 +687,6 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-.nudge-card .k {
-  font-family: var(--dk-font-mono);
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--dk-text-muted);
 }
 .nudge-card .msg { font: 400 26px/1.35 var(--dk-font-sans); color: var(--dk-text-emphasis); }
 .nudge-card .chips { display: flex; gap: 12px; }
