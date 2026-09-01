@@ -577,7 +577,7 @@ html, body {
 .swatch-row { display: flex; justify-content: space-between; }
 .color-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 14px; }
 .color-grid .swatch { width: 100%; }
-.color-grid .chip { width: 100%; height: 64px; }
+.color-grid .swatch .chip { width: 100%; height: 60px; }
 .swatch { display: flex; flex-direction: column; gap: 8px; align-items: center; }
 .swatch .chip { width: 56px; height: 56px; border-radius: var(--dk-radius-sm); border: 1px solid var(--dk-border); }
 .swatch .hx {
