@@ -42,7 +42,9 @@
   --sl-yellow: #ffc62b;           /* Safelite yellow: rating bars,
                                      promo accents */
   /* Excluded from the system: #3860be and #3c7356 sampled on-page
-     but belong to the OneTrust consent widget, not Safelite. */
+     but belong to the OneTrust consent widget, not Safelite. The
+     rating stars' dark outline (#765c25) is baked into an SVG
+     asset, not stylesheet CSS, so it lives with the asset. */
 
   /* Text */
   --sl-text-primary: #000000;
