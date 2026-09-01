@@ -66,6 +66,7 @@
   --sl-radius-lg: 16px;
   --sl-radius-xl: 24px;
   --sl-radius-xxl: 32px;
+  --sl-radius-cta: 46px;          /* large CTA rounding */
   --sl-radius-pill: 800px;
 
   /* Borders */
@@ -78,10 +79,12 @@
      150–300ms, 500–750ms for larger moves */
   --sl-ease-site: ease;
   --sl-ease-out: ease-out;
+  --sl-ease-in-out: ease-in-out;
   --sl-dur-micro: 150ms;
   --sl-dur-quick: 200ms;
   --sl-dur-standard: 300ms;
   --sl-dur-slow: 500ms;
+  --sl-dur-slower: 750ms;
 
   /* Type family — Safelite's actual face, served from Google Fonts */
   --sl-font-sans: "Urbanist", "Helvetica Neue", Arial, sans-serif;

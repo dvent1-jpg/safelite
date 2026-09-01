@@ -128,12 +128,13 @@
           <span class="g-label">Radius</span>
           <div class="radius-rows">
             <div class="radius-row">
-              <div class="swatch"><div class="rb" style="border-radius:var(--dk-radius-xs)"></div><span class="hx">3</span></div>
-              <div class="swatch"><div class="rb" style="border-radius:var(--dk-radius-sm)"></div><span class="hx">8</span></div>
-              <div class="swatch"><div class="rb" style="border-radius:var(--dk-radius-md)"></div><span class="hx">12</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-sm)"></div><span class="hx">8</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-md)"></div><span class="hx">12</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-lg)"></div><span class="hx">16</span></div>
             </div>
             <div class="radius-row">
-              <div class="swatch"><div class="rb" style="border-radius:var(--dk-radius-lg)"></div><span class="hx">24</span></div>
+              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-xl)"></div><span class="hx">24</span></div>
+              <div class="swatch"><div class="rb rb--cta" style="border-radius:var(--sl-radius-cta)"></div><span class="hx">46</span></div>
               <div class="swatch"><div class="rb rb--pill"></div><span class="hx">800</span></div>
             </div>
           </div>
@@ -141,6 +142,7 @@
         <div class="token-group reveal" data-reveal="4">
           <span class="g-label">Effects</span>
           <div class="fx-row">
+            <div class="swatch"><div class="fx fx--soft"></div><span class="hx">soft</span></div>
             <div class="swatch"><div class="fx fx--glow"></div><span class="hx">card</span></div>
             <div class="swatch"><div class="fx fx--ring"></div><span class="hx">ring</span></div>
           </div>
@@ -151,9 +153,8 @@
 <span class="k">--sl-red</span>: #db0020;
 <span class="k">--sl-yellow</span>: #ffc62b;
 <span class="k">--sl-shadow-card</span>: 0px 2px 4px rgba(0, 0, 0, 0.32), 0px 4px 12px rgba(0, 0, 0, 0.32);
-<span class="k">--sl-radius-pill</span>: 800px;
-<span class="k">--sl-dur-standard</span>: 300ms;
-<span class="k">--sl-font-sans</span>: "Urbanist", "Helvetica Neue", Arial, sans-serif;</div>
+<span class="k">--sl-radius-cta</span>: 46px;
+<span class="k">--sl-font-sans</span>: "Urbanist";</div>
         </div>
         <div class="token-group tg--span2 reveal" data-reveal="5">
           <span class="g-label">Unsplash API</span>
@@ -166,8 +167,15 @@
         <div class="token-group reveal" data-reveal="5">
           <span class="g-label">Motion</span>
           <div class="motion-lines">
-            <span>ease &middot; ease-out</span>
-            <span>150 &middot; 200 &middot; 300 &middot; 500 ms</span>
+            <span>ease &middot; ease-out &middot; ease-in-out</span>
+            <span>150 &middot; 250 &middot; 300 &middot; 500 &middot; 750 ms</span>
+          </div>
+        </div>
+        <div class="token-group reveal" data-reveal="5">
+          <span class="g-label">Buttons</span>
+          <div class="btn-demos">
+            <span class="btn-demo btn-demo--solid">Let's get started</span>
+            <span class="btn-demo btn-demo--ghost">Get quote + schedule</span>
           </div>
         </div>
       </div>

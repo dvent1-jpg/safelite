@@ -522,7 +522,7 @@ html, body {
 .tg--span2 { grid-column: span 2; }
 .tg--span3 { grid-column: span 3; }
 .tg--span4 { grid-column: span 4; }
-.tg--code { grid-column: 4; grid-row: 2 / 4; }
+.tg--code { grid-column: 4; }
 .tg--code .code-card { flex: 1; overflow: hidden; }
 .code-card {
   background: var(--dk-bg-raised);
@@ -616,6 +616,12 @@ html, body {
 }
 .fx--glow { background: var(--dk-bg); box-shadow: var(--dk-shadow-glow); }
 .fx--ring { background: var(--dk-bg); box-shadow: var(--sl-shadow-card-ring); }
+.fx--soft { background: var(--dk-bg); box-shadow: var(--sl-shadow-soft); }
+.radius-row .rb--cta { width: 128px; }
+.btn-demos { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.btn-demo { font: 600 17px/1 var(--dk-font-sans); padding: 15px 34px; white-space: nowrap; }
+.btn-demo--solid { background: var(--sl-blue); color: #fff; border-radius: var(--sl-radius-cta); }
+.btn-demo--ghost { color: var(--sl-blue); border: 1px solid var(--sl-blue); border-radius: var(--sl-radius-lg); }
 /* --- Title marquee (velocity.black card-stream, verticalized) --- */
 .marquee {
   position: absolute;
