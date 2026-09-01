@@ -552,7 +552,6 @@ html, body {
 .tg--code .code-card { flex: 1; overflow: hidden; }
 .code-card {
   background: var(--dk-bg-raised);
-  box-shadow: var(--sl-shadow-soft);
   border-radius: var(--dk-radius-md);
   padding: 20px 22px;
   font-family: var(--dk-font-mono);
@@ -576,9 +575,9 @@ html, body {
   color: var(--dk-text-primary);
 }
 .swatch-row { display: flex; justify-content: space-between; }
-.color-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 24px; }
+.color-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 14px; }
 .color-grid .swatch { width: 100%; }
-.color-grid .chip { width: 100%; height: 56px; }
+.color-grid .chip { width: 100%; height: 64px; }
 .swatch { display: flex; flex-direction: column; gap: 8px; align-items: center; }
 .swatch .chip { width: 56px; height: 56px; border-radius: var(--dk-radius-sm); border: 1px solid var(--dk-border); }
 .swatch .hx {
@@ -621,12 +620,12 @@ html, body {
 .radius-rows { display: flex; flex-direction: column; gap: 18px; }
 .radius-row .swatch { justify-content: flex-end; }
 .radius-row .rb {
-  width: 74px;
-  height: 74px;
+  width: 96px;
+  height: 64px;
   border: 1px solid var(--dk-border-strong);
   background: var(--dk-bg-raised);
 }
-.radius-row .rb--pill { width: 150px; height: 56px; border-radius: var(--dk-radius-pill); }
+.radius-row .rb--pill { border-radius: var(--dk-radius-pill); }
 .motion-lines {
   display: flex;
   flex-direction: column;
@@ -646,9 +645,9 @@ html, body {
   border-radius: var(--dk-radius-md);
 }
 .fx--glow { background: var(--dk-bg); box-shadow: var(--dk-shadow-glow); }
-.fx--ring { background: var(--dk-bg); box-shadow: var(--sl-shadow-card-ring); }
+.fx--ring { background: var(--dk-bg); box-shadow: 0 0 0 2.5px var(--sl-gray-200); }
 .fx--soft { background: var(--dk-bg); box-shadow: var(--sl-shadow-soft); }
-.radius-row .rb--cta { width: 128px; }
+
 .btn-demos { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .btn-demo { font: 600 17px/1 var(--dk-font-sans); padding: 15px 34px; white-space: nowrap; }
 .btn-demo--solid { background: var(--sl-blue); color: #fff; border-radius: var(--sl-radius-cta); }
