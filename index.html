@@ -94,7 +94,7 @@
       <div class="token-board">
         <div class="head">
           <h2 class="display-lg reveal">How this deck was built.</h2>
-          <p class="body-lg reveal">I used Claude Code to scrape Safelite.com for CSS values. Then I built a tokens.css file that acted as the source of truth and called the Unsplash API to directly inject luxury travel photography. It's hosted on GitHub and served by Vercel.</p>
+          <p class="body-lg reveal">I used Claude Code to scrape Safelite.com for CSS values. Then I built a tokens.css file that acted as the source of truth for every slide that follows, and called the Unsplash API to directly inject luxury travel photography. It's hosted on GitHub and served by Vercel.</p>
         </div>
         <div class="token-group tg--span2 reveal" data-reveal="2">
           <span class="g-label">Color</span>
@@ -102,17 +102,14 @@
             <div class="swatch"><div class="chip" style="background:var(--sl-white)"></div><span class="hx">FFFFFF</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-gray-50)"></div><span class="hx">F5F7FA</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-gray-200)"></div><span class="hx">E8E9E9</span></div>
-            <div class="swatch"><div class="chip" style="background:var(--sl-gray-300)"></div><span class="hx">DCDCDC</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-gray-500)"></div><span class="hx">8B8D8E</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-gray-600)"></div><span class="hx">5E5F61</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-gray-700)"></div><span class="hx">4B4C4E</span></div>
-            <div class="swatch"><div class="chip" style="background:var(--sl-gray-950)"></div><span class="hx">222222</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-black)"></div><span class="hx">000000</span></div>
           </div>
           <div class="swatch-row swatch-row--brand">
             <div class="swatch"><div class="chip" style="background:var(--sl-blue)"></div><span class="hx">0070D1</span></div>
             <div class="swatch"><div class="chip" style="background:var(--sl-red)"></div><span class="hx">DB0020</span></div>
-            <div class="swatch"><div class="chip" style="background:var(--sl-yellow)"></div><span class="hx">FFC62B</span></div>
           </div>
         </div>
         <div class="token-group reveal" data-reveal="3">
@@ -125,17 +122,10 @@
         </div>
         <div class="token-group reveal" data-reveal="3">
           <span class="g-label">Radius</span>
-          <div class="radius-rows">
-            <div class="radius-row">
-              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-sm)"></div><span class="hx">8</span></div>
-              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-md)"></div><span class="hx">12</span></div>
-              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-lg)"></div><span class="hx">16</span></div>
-            </div>
-            <div class="radius-row">
-              <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-xl)"></div><span class="hx">24</span></div>
-              <div class="swatch"><div class="rb rb--cta" style="border-radius:var(--sl-radius-cta)"></div><span class="hx">46</span></div>
-              <div class="swatch"><div class="rb rb--pill"></div><span class="hx">800</span></div>
-            </div>
+          <div class="radius-row">
+            <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-sm)"></div><span class="hx">8</span></div>
+            <div class="swatch"><div class="rb" style="border-radius:var(--sl-radius-md)"></div><span class="hx">12</span></div>
+            <div class="swatch"><div class="rb" style="border-radius:var(--dk-radius-card)"></div><span class="hx">20</span></div>
           </div>
         </div>
         <div class="token-group reveal" data-reveal="4">
@@ -143,17 +133,17 @@
           <div class="fx-row">
             <div class="swatch"><div class="fx fx--soft"></div><span class="hx">soft</span></div>
             <div class="swatch"><div class="fx fx--glow"></div><span class="hx">card</span></div>
-            <div class="swatch"><div class="fx fx--ring"></div><span class="hx">ring</span></div>
           </div>
         </div>
         <div class="token-group tg--code reveal" data-reveal="4">
           <span class="g-label">tokens.css</span>
           <div class="code-card"><span class="k">--sl-blue</span>: #0070d1;
 <span class="k">--sl-red</span>: #db0020;
-<span class="k">--sl-yellow</span>: #ffc62b;
+<span class="k">--sl-gray-700</span>: #4b4c4e;
 <span class="k">--sl-shadow-card</span>: 0px 2px 4px rgba(0, 0, 0, 0.32), 0px 4px 12px rgba(0, 0, 0, 0.32);
-<span class="k">--sl-radius-cta</span>: 46px;
-<span class="k">--sl-font-sans</span>: "Urbanist";</div>
+<span class="k">--sl-shadow-soft</span>: 0px 1px 4px rgba(55, 56, 57, 0.08), 0px 1px 2px rgba(55, 56, 57, 0.56);
+<span class="k">--sl-radius-md</span>: 12px;
+<span class="k">--sl-font-sans</span>: "Urbanist", "Helvetica Neue", Arial, sans-serif;</div>
         </div>
         <div class="token-group tg--span2 reveal" data-reveal="5">
           <span class="g-label">Unsplash API</span>
@@ -166,15 +156,8 @@
         <div class="token-group reveal" data-reveal="5">
           <span class="g-label">Motion</span>
           <div class="motion-lines">
-            <span>ease &middot; ease-out &middot; ease-in-out</span>
-            <span>150 &middot; 250 &middot; 300 &middot; 500 &middot; 750 ms</span>
-          </div>
-        </div>
-        <div class="token-group reveal" data-reveal="5">
-          <span class="g-label">Buttons</span>
-          <div class="btn-demos">
-            <span class="btn-demo btn-demo--solid">Let's get started</span>
-            <span class="btn-demo btn-demo--ghost">Get quote + schedule</span>
+            <span>cubic-bezier(0.25, 0.46, 0.45, 0.94)</span>
+            <span>300 &middot; 400 &middot; 500 ms</span>
           </div>
         </div>
       </div>

@@ -523,7 +523,7 @@ html, body {
 .tg--span2 { grid-column: span 2; }
 .tg--span3 { grid-column: span 3; }
 .tg--span4 { grid-column: span 4; }
-.tg--code { grid-column: 4; }
+.tg--code { grid-column: 4; grid-row: 2 / 4; }
 .tg--code .code-card { flex: 1; overflow: hidden; }
 .code-card {
   background: var(--dk-bg-raised);
