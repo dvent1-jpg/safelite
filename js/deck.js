@@ -29,7 +29,7 @@
         el.textContent = prefix + target.toFixed(decimals) + suffix;
         return;
       }
-      const duration = 2000;
+      const duration = 1200;
       const start = performance.now();
       const ease = (t) => 1 - Math.pow(1 - t, 4);
       function frame(now) {

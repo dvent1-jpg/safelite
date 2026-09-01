@@ -127,7 +127,7 @@
   /* Type scale — Safelite ratios (800 display, +0.03em), sized for
      the 1920×1080 stage */
   --dk-type-stat: 800 240px/1 var(--sl-font-sans);
-  --dk-type-hero: 800 96px/1.1 var(--sl-font-sans);
+  --dk-type-hero: 800 80px/1.14 var(--sl-font-sans);
   --dk-type-display-xl: 800 80px/1.1 var(--sl-font-sans);
   --dk-type-display-lg: 800 60px/1.14 var(--sl-font-sans);
   --dk-type-display-md: 800 46px/1.2 var(--sl-font-sans);
@@ -146,7 +146,7 @@
   --dk-radius-sm: var(--sl-radius-sm);
   --dk-radius-md: var(--sl-radius-md);
   --dk-radius-lg: var(--sl-radius-xl);
-  --dk-radius-card: var(--sl-radius-lg);
+  --dk-radius-card: 20px;    /* their large-card rounding */
   --dk-radius-pill: var(--sl-radius-pill);
   --dk-radius-circle: 50%;
 
@@ -183,10 +183,10 @@
   --dk-space-6: 96px;
   --dk-space-7: 144px;
 
-  /* Deck motion — presentation pace, same as before; site motion
-     documented above is faster but a deck breathes slower */
-  --dk-ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --dk-reveal-duration: 900ms;
+  /* Deck motion — Safelite is brisk; the deck follows at a
+     presentation-safe version of their pace */
+  --dk-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --dk-reveal-duration: 500ms;
 
   /* Signals */
   --dk-error: var(--sl-red);
