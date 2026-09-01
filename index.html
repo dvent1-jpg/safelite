@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=125">
-  <link rel="stylesheet" href="css/slides.css?v=125">
+  <link rel="stylesheet" href="css/tokens.css?v=129">
+  <link rel="stylesheet" href="css/slides.css?v=129">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
     <!-- 01 · Title -->
     <section class="slide slide--title">
       <div class="title-media">
-        <img src="assets/storefront.jpg" alt="A Safelite store with a Mobile Glass Shop van out front">
+        <img class="reveal" data-reveal="2" src="assets/storefront.jpg" alt="A Safelite store with a Mobile Glass Shop van out front">
       </div>
       <p class="eyebrow reveal">Product Design Director &middot; August 2026</p>
       <h1 class="display-hero reveal">Experiences that make booking <span class="grad-text">extraordinary.</span></h1>
@@ -78,7 +78,7 @@
           <h2 class="display-lg reveal">How this deck was built.</h2>
           <p class="body-lg reveal">I used Claude Code to scrape Safelite.com for CSS values. Then I built a tokens.css file that acted as the source of truth for every slide that follows, and called the Unsplash API to directly inject luxury travel photography. It's hosted on GitHub and served by Vercel.</p>
         </div>
-        <div class="token-group tg--span2 reveal" data-reveal="2">
+        <div class="token-group reveal" data-reveal="2">
           <span class="g-label">Color</span>
           <div class="color-grid">
             <div class="swatch"><div class="chip" style="background:var(--sl-white)"></div><span class="hx">FFFFFF</span></div>
@@ -117,26 +117,41 @@
         </div>
         <div class="token-group reveal" data-reveal="4">
           <span class="g-label">Effects</span>
-          <div class="fx-row">
+          <div class="fx-stack">
             <div class="swatch"><div class="fx fx--soft"></div><span class="hx">soft</span></div>
-            <div class="swatch"><div class="fx fx--glow"></div><span class="hx">card</span></div>
             <div class="swatch"><div class="fx fx--ring"></div><span class="hx">ring</span></div>
+            <div class="swatch"><div class="fx fx--glow"></div><span class="hx">card</span></div>
           </div>
         </div>
         <div class="token-group tg--code reveal" data-reveal="4">
           <span class="g-label">tokens.css</span>
           <div class="code-card"><span class="k">--sl-white</span>: #ffffff;
 <span class="k">--sl-gray-50</span>: #f5f7fa;
+<span class="k">--sl-gray-100</span>: #f4f4f4;
 <span class="k">--sl-gray-200</span>: #e8e9e9;
+<span class="k">--sl-gray-300</span>: #dcdcdc;
+<span class="k">--sl-gray-500</span>: #8b8d8e;
+<span class="k">--sl-gray-600</span>: #5e5f61;
 <span class="k">--sl-gray-700</span>: #4b4c4e;
+<span class="k">--sl-gray-950</span>: #222222;
 <span class="k">--sl-black</span>: #000000;
 <span class="k">--sl-blue</span>: #0070d1;
 <span class="k">--sl-red</span>: #db0020;
-<span class="k">--sl-shadow-card</span>: 0px 2px 4px rgba(0, 0, 0, 0.32), 0px 4px 12px rgba(0, 0, 0, 0.32);
 <span class="k">--sl-shadow-soft</span>: 0px 1px 4px rgba(55, 56, 57, 0.08), 0px 1px 2px rgba(55, 56, 57, 0.56);
+<span class="k">--sl-shadow-card</span>: 0px 2px 4px rgba(0, 0, 0, 0.32), 0px 4px 12px rgba(0, 0, 0, 0.32);
+<span class="k">--sl-radius-sm</span>: 8px;
 <span class="k">--sl-radius-md</span>: 12px;
+<span class="k">--sl-radius-lg</span>: 16px;
+<span class="k">--sl-radius-xl</span>: 24px;
+<span class="k">--sl-radius-xxl</span>: 32px;
 <span class="k">--sl-radius-cta</span>: 46px;
+<span class="k">--sl-radius-pill</span>: 800px;
+<span class="k">--sl-ease-site</span>: ease;
+<span class="k">--sl-ease-out</span>: ease-out;
+<span class="k">--sl-dur-quick</span>: 200ms;
 <span class="k">--sl-dur-standard</span>: 300ms;
+<span class="k">--sl-dur-slow</span>: 500ms;
+<span class="k">--sl-dur-slower</span>: 750ms;
 <span class="k">--sl-font-sans</span>: "Urbanist", "Helvetica Neue", Arial, sans-serif;</div>
         </div>
         <div class="token-group tg--span2 reveal" data-reveal="5">
@@ -392,7 +407,7 @@
 <div id="progress"></div>
 <div id="slide-counter">01 / 27</div>
 
-<script src="js/deck.js?v=125"></script>
+<script src="js/deck.js?v=129"></script>
 
 <!-- Photography via Unsplash (unsplash.com/license):
      bg-title.jpg (glacier bath) — Roan Lavery, unsplash.com/photos/BQLFUB4_EJw
