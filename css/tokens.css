@@ -36,12 +36,13 @@
 
   /* Brand colors */
   --sl-blue: #0070d1;             /* action: buttons, links, tabs */
-  --sl-blue-deep: #3860be;
   --sl-red: #db0020;              /* the wordmark, and the accent
                                      word inside black headlines */
   --sl-red-alt: #da291c;
-  --sl-yellow: #ffc62b;           /* Safelite yellow, promo accents */
-  --sl-green: #3c7356;            /* confirmation moments */
+  --sl-yellow: #ffc62b;           /* Safelite yellow: rating bars,
+                                     promo accents */
+  /* Excluded from the system: #3860be and #3c7356 sampled on-page
+     but belong to the OneTrust consent widget, not Safelite. */
 
   /* Text */
   --sl-text-primary: #000000;
